@@ -4,6 +4,8 @@
 
 This project implements a gesture-controlled robotic arm using ESP32 microcontrollers and MPU6050 sensors. Hand movements are captured using a glove and transmitted wirelessly via ESP-NOW to control the arm in real time.
 
+This project focuses on achieving low-latency wireless control with minimal hardware using ESP-NOW.
+
 ---
 
 ## Components
@@ -27,6 +29,8 @@ The transmitter reads motion data from the MPU6050 sensors and sends it wireless
 
 Flow:
 MPU6050 → ESP32 (Transmitter) → ESP-NOW → ESP32 (Receiver) → PCA9685 → Motors
+
+<img width="739" height="336" alt="overall block diagram" src="https://github.com/user-attachments/assets/52791bec-146a-4e7d-8e25-15b7d98a718e" />
 
 ---
 
